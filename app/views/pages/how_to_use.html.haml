@@ -1,1 +1,38 @@
-%h1 ご利用方法
+.wrapper
+  %header
+    %p.notice= notice
+    %p.alert= alert
+  .container-fluid
+  .container-fluid.mt-1
+    .p-3
+      .title_box
+        %h2.text-center -ご利用方法-
+      .nav.nav-tabs.d-flex.justify-content-between.aligen-items-center.flex-nowrap
+        .nav-item
+          %a.nav-link.active{ href: '#tab1', data: { toggle: 'tab' } }
+            = image_tag "how_to_use_step1.png", class: "step_image img-fluid rounded-circle"
+        .arrow
+          %h3 →
+        .nav-item
+          %a.nav-link{ href: '#tab2', data: { toggle: 'tab' } }
+            = image_tag "how_to_use_step2.png", class: "step_image img-fluid rounded-circle"
+        .arrow
+          %h3 →
+        .nav-item
+          %a.nav-link{ href: '#tab3', data: { toggle: 'tab' } }
+            = image_tag "how_to_use_step3.png", class: "step_image img-fluid rounded-circle"
+        .arrow
+          %h3 →
+        .nav-item
+          %a.nav-link{ href: '#tab4', data: { toggle: 'tab' } }
+            = image_tag "how_to_use_step4.png", class: "step_image img-fluid rounded-circle"
+
+      .tab-content
+        #tab1.tab-pane.active
+          %h2 tab1
+        #tab2.tab-pane
+          %h2 tab2
+        #tab3.tab-pane
+          %h2 tab3
+        #tab4.tab-pane
+          %h2 tab4
